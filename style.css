@@ -1,0 +1,99 @@
+/*
+*{
+    border: solid green;
+}
+*/
+body{
+    background-color: #f1f1f1;
+    font-family: arial;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+.btn-bg{
+    height: 50px;
+    width: 50px;
+    background-color: lightgray;
+    background-image: url(btn.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.btn-bg:hover{
+    opacity: 0.5;
+}
+
+.main-nav{
+    background-color: #ffffff;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    position: fixed;
+}
+
+.main-nav ul{
+    list-style-type: none;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;  
+}
+
+.main-nav ul li{
+    line-height: 25px;
+}
+
+.main-nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #111;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.main-nav ul li a:hover{
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.left-nav{
+    bottom: 10px;
+    height: calc(100vh - 75px);
+    width: 50px;
+    background-color: #1b1b1b;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    position: fixed;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.left-nav ul{
+    list-style-type: none;
+    padding-top: 50px;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.left-nav ul li{
+    line-height: 50px;
+}
+
+.left-nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    height: 60px;
+    white-space: nowrap;
+}
+
+.left-nav ul li a:hover{
+    color: lightgray;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
